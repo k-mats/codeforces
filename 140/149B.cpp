@@ -78,8 +78,8 @@ int toNum2(string s, int r) {
   int tmp, tmp2;
   for (i = s.size()-1, j = 0; i >= 0; i--, j++) {
     tmp = toNum(s[i]);
-    tmp2 = (int)pow((double)r, (double)j);
-    //    tmp2 = mypow(r, j);
+    // tmp2 = (int)pow((double)r, (double)j);
+    tmp2 = mypow(r, j);
     rtn += (tmp * tmp2);
   }
 
